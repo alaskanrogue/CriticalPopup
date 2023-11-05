@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+        x:Class="CriticalPopup.Destination" BackgroundColor="#C0C0C0">
+
+    <ContentPage.Content>
+        <AbsoluteLayout>
+
+        <Grid x:Name="BaseGrid">
+            <Grid.RowDefinitions>
+                <RowDefinition x:Name="HeaderGrid"></RowDefinition>
+                <RowDefinition x:Name="LayoutGrid"></RowDefinition>
+            </Grid.RowDefinitions>
+
+                <!-- Header Grid -->
+                <Grid x:Name="HeaderRoot" Grid.Row="0" HorizontalOptions="Center" VerticalOptions="Start" Opacity="100" Margin="0" Padding= "0" IsVisible="True" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition x:Name="HCol0" Width="*" />
+                        <ColumnDefinition x:Name="HCol1" Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition x:Name="HRow0"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Image x:Name="Headerlogo" Grid.Row="0" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Start"/>
+                    <Image x:Name="Header" Grid.Row="0" Grid.Column="1" HorizontalOptions="End"  VerticalOptions="Start"/>
+                </Grid>
+
+                <!--LayoutRoot is the root grid where all page content is placed-->
+                <Grid x:Name="LayoutRoot" Grid.Row="1" Opacity="100" Margin="0" Padding="0" IsVisible="True" >
+
+                    <Grid.ColumnDefinitions>
+                    <ColumnDefinition x:Name="Col0">
+                    </ColumnDefinition>
+                    <ColumnDefinition x:Name="Col1">
+                    </ColumnDefinition>
+                    <ColumnDefinition x:Name="Col2">
+                    </ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition x:Name="Row0">
+                    </RowDefinition>
+                    <RowDefinition x:Name="Row1">
+                    </RowDefinition>
+                    <RowDefinition x:Name="Row2">
+                    </RowDefinition>
+                    <RowDefinition x:Name="Row3">
+                    </RowDefinition>
+                    <RowDefinition x:Name="Row4">
+                    </RowDefinition>
+                    <RowDefinition x:Name="Row5">
+                    </RowDefinition>
+                    <RowDefinition x:Name="Row6">
+                    </RowDefinition>
+                    <RowDefinition x:Name="Row7">
+                    </RowDefinition>
+                    <RowDefinition x:Name="Row8">
+                    </RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Grid x:Name="Spacer1" Grid.Row="0" Grid.Column="1" Opacity="100" Margin="0" Padding="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                </Grid>
+
+                <Grid x:Name="Content1" Grid.Row="1" Grid.Column="1" Opacity="100" Margin="0" Padding= "0" IsVisible="True" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Label LineBreakMode="WordWrap" FontFamily="Calibri Light" FontAttributes="Bold, Italic" HorizontalOptions="Start" IsVisible="True" >
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span x:Name="Headline"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </Grid>
+
+                <Grid x:Name="Spacer2" Grid.Row="2" Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Start" Opacity="100" Margin="0" Padding="0" IsVisible="True" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                </Grid>
+
+                <Grid x:Name="Content2" Grid.Row="3" Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Start" Opacity="100" Margin="0" Padding="0" IsVisible="True" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid x:Name="LayoutSubRoot1" Grid.Row="0" Grid.Column="0" HorizontalOptions="Start" Opacity="100" Margin="0"  IsVisible="True" >
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="1" />
+                        </Grid.ColumnDefinitions>
+                        <Grid x:Name="ReasonGrid" Grid.Row="0" Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Start" Opacity="100" Margin="0"  IsVisible="True" >
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="1"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="1"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1" />
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="1" />
+                            </Grid.ColumnDefinitions>
+                            <Border x:Name="ReasonLabelBorder" Grid.Row="1" Grid.Column="1" 
+                                Stroke="#000000"
+                                StrokeThickness="3"
+                                StrokeShape="RoundRectangle 20,20,20,20"
+                                Background="#FFFFFFFF"
+                                Padding="16,8"
+                                HorizontalOptions="Center" VerticalOptions="Center" >
+                                <Label x:Name="ReasonLabel" Grid.Row="1" Grid.Column="1" Background="#FFFFFFFF" HorizontalOptions="Center" VerticalOptions="Start" IsVisible="True" >
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span x:Name="ReasonSpan"/>
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+                            </Border>
+                        </Grid>
+                    </Grid>
+                </Grid>
+
+                <Grid x:Name="Spacer3" Grid.Row="4" Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Start" Opacity="100" Margin="0" Padding="0" IsVisible="True" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                </Grid>
+
+                <Grid x:Name="Content3" Grid.Row="5" Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Start" Opacity="100" Margin="0" Padding="0" IsVisible="True" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid x:Name="LayoutSubRoot2" Grid.Row="0" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Start" Opacity="100" Margin="0" IsVisible="True" >
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="1" />
+                        </Grid.ColumnDefinitions>
+                        <Grid x:Name="RequesterGrid" Grid.Row="0" Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Start" Opacity="100" Margin="0" IsVisible="True" >
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="1"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="1"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1" />
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="1" />
+                            </Grid.ColumnDefinitions>
+                            <Border x:Name="RequesterLabelBorder" Grid.Row="1" Grid.Column="1" 
+                                Stroke="#000000"
+                                StrokeThickness="3"
+                                StrokeShape="RoundRectangle 20,20,20,20"
+                                Background="#FFFFFFFF"
+                                Padding="16,8"
+                                HorizontalOptions="Center" VerticalOptions="Center" >
+                                <Label x:Name="RequesterLabel" Grid.Row="1" Background="#FFFFFFFF" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Start" IsVisible="True">
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span x:Name="RequesterSpan"/>
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+                            </Border>
+                        </Grid>
+                    </Grid>
+                </Grid>
+
+                <Grid x:Name="Spacer4" Grid.Row="6" Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Start" Opacity="100" Margin="0" Padding="0" IsVisible="True" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                </Grid>
+                    
+                <Grid x:Name="Content4" Grid.Row="7" Grid.Column="1" Opacity="100" Margin="0" Padding="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid x:Name="LayoutSubRoot3" Grid.Row="0" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Start" Opacity="100" Margin="0" Padding= "0" IsVisible="True" >
+                        <Grid.RowDefinitions>
+                            <RowDefinition x:Name="Row7a" Height="*"/>
+                            <RowDefinition x:Name="Row7b" Height="*"/>
+                            <RowDefinition x:Name="Row7c" Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                                <ColumnDefinition x:Name="Column7a" Width="Auto" />
+                                <ColumnDefinition x:Name="Column7b" Width="*" />
+                                <ColumnDefinition x:Name="Column7c" Width="Auto" />
+                                <ColumnDefinition x:Name="Column7d" Width="*" />
+                                <ColumnDefinition x:Name="Column7e" Width="Auto" />
+                                <ColumnDefinition x:Name="Column7f" Width="*" />
+                                <ColumnDefinition x:Name="Column7g" Width="Auto" />
+                            </Grid.ColumnDefinitions>
+
+                        <ImageButton IsEnabled="True" x:Name="Button_Yes" Clicked="Clicked_Yes" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Transparent" BorderColor="Transparent" IsVisible="True" Grid.Row="0" Grid.Column="1">
+                        </ImageButton>
+                        <ImageButton IsEnabled="True" x:Name="Button_No" Clicked="Clicked_No" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Transparent" BorderColor="Transparent" IsVisible="True" Grid.Row="0" Grid.Column="5">
+                        </ImageButton>
+
+                        <Label x:Name="YesLabel" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" IsVisible="True" Grid.Row="2" Grid.Column="1">
+                            <Label.FormattedText>
+                            <FormattedString>
+                                <Span x:Name="Button_YesLabel" BackgroundColor="Transparent" />
+                            </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                            <Label x:Name="NextLabel" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" IsVisible="False" Grid.Row="2" Grid.Column="3">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span x:Name="Button_NextLabel" BackgroundColor="Transparent" />
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <Label x:Name="NoLabel" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" IsVisible="True" Grid.Row="2" Grid.Column="5">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span x:Name="Button_NoLabel" BackgroundColor="Transparent" />
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                    </Grid>
+                </Grid>
+
+                <Grid x:Name="Spacer5" Grid.Row="8" Grid.Column="1" Opacity="100" Margin="0" Padding="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                </Grid>
+
+            </Grid>
+        </Grid>
+
+    </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>
